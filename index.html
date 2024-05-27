@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>비밀번호 생성하기!</h1>
+      <form class="copy">
+        <input type="text" class="password" />
+        <input type="submit" value="복사" class="copy-btn" />
+      </form>
+      <div class="length">
+        <label>Length <input type="number" class="length-num" /></label>
+      </div>
+      <div class="include">
+        <p>포함할 문자:</p>
+        <label>
+          <input type="checkbox" class="number" />
+          Number(0~9)
+        </label>
+        <label>
+          <input type="checkbox" class="SLetters" /> Small Letters (a~z)
+        </label>
+        <label>
+          <input type="checkbox" class="CLetters" /> Capital Letters (A~Z)
+        </label>
+        <label>
+          <input type="checkbox" class="symbols" /> Symbols (@,!,#,$,&,%)
+        </label>
+        <button class="create-btn" onclick="onClickCreate()">생성하기</button>
+      </div>
+      <div class="explanation">
+        <ul>
+          <li>최소 길이는 5입니다.</li>
+          <li>최대 길이는 70입니다.</li>
+          <li>강력한 비밀번호는 10~16자여야 합니다.</li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
